@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class SnakeGame extends JPanel implements ActionListener {
     private final int width = 300;
@@ -180,6 +182,14 @@ public class SnakeGame extends JPanel implements ActionListener {
         }
     }
 
+    public class SnakeGameTest {
+        @Test
+        public void testAddition() {
+            int sum = 1 + 2;
+            assertEquals(3, sum);
+        }
+    }
+
     public static void main(String[] args) {
         JFrame frame = new JFrame("Snake Game");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -188,5 +198,8 @@ public class SnakeGame extends JPanel implements ActionListener {
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+
+
+        //testing pipeline by just adding a comment
     }
 }

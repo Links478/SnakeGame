@@ -8,16 +8,16 @@ public class SnakeGame extends JPanel implements ActionListener {
     private final int dotSize = 10;
     private final int dots = 900;
     private final int delay = 140;
-    private final int x[] = new int[dots];
-    private final int y[] = new int[dots];
+    public final int[] x = new int[dots];
+    public final int[] y = new int[dots];
     private int dotsCount;
     private int appleX;
     private int appleY;
-    private boolean leftDirection = false;
-    private boolean rightDirection = true;
-    private boolean upDirection = false;
-    private boolean downDirection = false;
-    private boolean inGame = true;
+    public boolean leftDirection = false;
+    public boolean rightDirection = true;
+    public boolean upDirection = false;
+    public boolean downDirection = false;
+    public boolean inGame = true;
     private Timer timer;
 
     public SnakeGame() {

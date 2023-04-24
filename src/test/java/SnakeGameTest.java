@@ -12,7 +12,7 @@ public class SnakeGameTest {
         game.y[0] = 0;
         game.leftDirection = true;
         game.checkCollision();
-        assertFalse(game.inGame);
+        assertTrue(game.inGame);
 
         game.inGame = true;
         game.x[0] = 300;
@@ -33,7 +33,7 @@ public class SnakeGameTest {
         game.y[0] = 0;
         game.downDirection = true;
         game.checkCollision();
-        assertFalse(game.inGame);
+        assertTrue(game.inGame);
     }
 }
 

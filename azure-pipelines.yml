@@ -22,10 +22,12 @@ steps:
     mavenPomFile: 'pom.xml'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    testRunTitle: 'Test Collision'
+    testRunTitle: 'Test'
     javaHomeOption: 'JDKVersion'
-    mavenVersionOption: 'Default'
+    mavenVersionOption: 'Path'
+    mavenDirectory: 'C:\Program Files\apache-maven-3.9.1'
+    mavenSetM2Home: false
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: true
-    sqMavenPluginVersionChoice: 'latest'
+    sqMavenPluginVersionChoice: 'pom'

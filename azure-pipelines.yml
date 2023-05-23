@@ -26,7 +26,7 @@ steps:
     javaHomeOption: 'JDKVersion'
     mavenVersionOption: 'Path'
     mavenDirectory: 'C:\Program Files\apache-maven-3.9.1'
-    mavenSetM2Home: false
+    mavenSetM2Home: true
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: true

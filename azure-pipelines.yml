@@ -33,3 +33,8 @@ steps:
   inputs:
     targetPath: '$(Pipeline.Workspace)'
     publishLocation: 'pipeline'
+- task: OctopusPackZip@6
+  inputs:
+    PackageId: 'com.links478'
+    PackageVersion: '2.0'
+    Include: '*.jar'

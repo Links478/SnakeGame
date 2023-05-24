@@ -29,9 +29,9 @@ steps:
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
     sqMavenPluginVersionChoice: 'latest'
-- task: CopyFiles@2
+- task: UniversalPackages@0
   inputs:
-    Contents: '**'
-    TargetFolder: '$(build.artifactstagingdirectory)'
-    CleanTargetFolder: true
-    OverWrite: true
+    command: 'download'
+    downloadDirectory: '$(System.DefaultWorkingDirectory)'
+    feedsToUse: 'internal'
+    vstsFeed: 'f4061984-31b3-4e50-9523-e0306c48c51e'

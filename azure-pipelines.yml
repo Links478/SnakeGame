@@ -35,3 +35,5 @@ steps:
     downloadDirectory: '$(System.DefaultWorkingDirectory)'
     feedsToUse: 'internal'
     vstsFeed: 'f4061984-31b3-4e50-9523-e0306c48c51e'
+    vstsFeedPackage: 'SnakeGame'
+    vstsPackageVersion: '2.0'

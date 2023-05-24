@@ -31,7 +31,7 @@ steps:
     sqMavenPluginVersionChoice: 'latest'
 - task: CopyFiles@2
   inputs:
-    Contents: '*.jar'
+    Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
     CleanTargetFolder: true
     OverWrite: true

@@ -29,11 +29,8 @@ steps:
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
     sqMavenPluginVersionChoice: 'latest'
-- task: UniversalPackages@0
+- task: PublishBuildArtifacts@1
   inputs:
-    command: 'download'
-    downloadDirectory: '$(System.DefaultWorkingDirectory)'
-    feedsToUse: 'internal'
-    vstsFeed: 'f4061984-31b3-4e50-9523-e0306c48c51e'
-    vstsFeedPackage: 'SnakeGame'
-    vstsPackageVersion: '2.0'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
